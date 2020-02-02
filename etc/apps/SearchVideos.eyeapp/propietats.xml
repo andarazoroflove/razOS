@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<eyeOSapp>
+  <title>Search Videos in YouTube</title>
+  <version>1.0</version>
+  <window height='490' width='580'>
+  </window>
+  <infofile>README</infofile>
+</eyeOSapp>

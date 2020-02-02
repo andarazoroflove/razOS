@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<eyeOSapp>
+  <title>eyeEdit</title>
+  <helpfile>index</helpfile>
+  <version>2.0</version>
+  <window height='490' width='725'>
+     <x_pos>100</x_pos>
+     <y_pos>20</y_pos>
+  </window>
+  <param>
+    <rich_editor args='label:Use the Rich Text editor; type:bool;'>1</rich_editor> 
+  </param>
+</eyeOSapp>

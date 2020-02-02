@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<eyeOSapp>
+  <title>Painter</title>
+  <version>1.2</version>
+  <author>TMerlin</author>
+  <window>
+    <height>540</height>
+    <width>620</width>
+  </window>
+</eyeOSapp>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<eyeBoard>
+  <title>eyeBoard</title>
+  <helpfile>index</helpfile>
+  <motd>etc/taulell.xml</motd>
+
+  <window height='450' width='520' /> 
+
+  <param>
+    <cols>60</cols>
+    <rows>11</rows>
+    <timefmt>%H:%g</timefmt>
+  </param>
+
+</eyeBoard>

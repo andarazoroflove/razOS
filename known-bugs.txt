@@ -1,0 +1,15 @@
+                           EyeOS 0.9.0 Known Bugs
+                           ======================
+
+In eyeApps
+
+0003  Notice: Undefined index: autorun 
+    in c:\webspace\www\eyeos\eyeos-0.9.0\eyeos-x09.0-2b\apps\eyeApps.eyeapp\aplic.php on line 94
+    
+  after apps config updated  
+ 
+
+In eyeApps under IE 
+0004  Large white space after action bar and before app list
+
+IE (default and Blue iris themes ) still has larger trash icon 

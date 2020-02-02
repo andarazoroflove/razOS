@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<eyeOSapp>
+  <title> BreakOut </title>
+  <window height='360' width='360'>
+<fullscreen>no</fullscreen>
+     <resize>no</resize>
+  </window>
+</eyeOSapp>

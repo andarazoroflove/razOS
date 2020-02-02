@@ -1,0 +1,99 @@
+body{
+	font-family: "Century Gothic", Verdana, Lucida, sans-serif;
+	background-color: #fff;
+	font-size: 10pt;
+	line-height: 1.7;
+	color: #787878;
+	margin: 0;
+	padding: 0;
+	background: url(back.png);
+	background-repeat: repeat;
+}
+a:link, a:visited{
+	color: #ff8400;
+	text-decoration: none;
+	border: 0;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #ff9c00;
+	border: 0;
+}
+input {
+	border: 1px solid #ccc;
+	background-color: #fff;
+	color: #a2a2a2;
+	font-size: 14pt;
+}
+.bodynav {
+	position: absolute;
+	width:940px;
+	left: 50%;
+	margin-left: -470px;
+	height: 650px;
+	background-color: #FFFFFF;
+}
+
+.blockbe {
+	position: absolute;
+	width:467px;
+	height: 327px;
+	top: 70px;
+	left: 60px;
+	background: url(block_be.png);
+	background-repeat: no-repeat;
+}
+
+.blocklogin {
+	position: absolute;
+	width:317px;
+	height: 366px;
+	top: 30px;
+	right: 60px;
+	background: url(block_login.png);
+	background-repeat: no-repeat;
+}
+
+.blockdown {
+	position: absolute;
+	width:820px;
+	height: 210px;
+	top: 420px;
+	right: 60px;
+	left: 60px;
+}
+.blockaccount {
+	position: absolute;
+	width:317px;
+	height: 207px;
+	top: 0px;
+	right: 0px;
+	background: url(block_account.png);
+	background-repeat: no-repeat;
+}
+.blocktext {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+
+.be {
+	font-weight:bold;
+	font-size: 12pt;
+	color: #565656;
+}
+.systitle {
+	font-weight:normal;
+	font-size: 18pt;
+	color: #565656;
+}
+.running {
+	font-weight:normal;
+	font-size: 10pt;
+	color: #ff7800;
+}
+
+
+

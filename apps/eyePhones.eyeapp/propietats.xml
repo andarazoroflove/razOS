@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<eyeOSapp>
+  <title>eyePhones</title>
+  <helpfile>index</helpfile>
+  <window>
+    <height>510</height>
+    <width>720</width>
+  </window>
+</eyeOSapp>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<eyeOSapp>
+  <title>Solitaire for eyeOS</title>
+  <window>
+    <height>615</height>
+    <width>680</width>
+    <x_pos>100</x_pos>
+    <y_pos>20</y_pos>
+    <fullscreen>no</fullscreen>
+    <resize>no</resize>
+  </window>
+</eyeOSapp>

@@ -1,0 +1,56 @@
+/* Default theme for install script - eyeOS */
+/* Body and common parts */
+body{
+	font-family: "Century Gothic", "Lucida Grande", Verdana, Lucida, sans-serif;
+	color: #565656;	
+	margin: 0px;
+	padding: 0px;
+	background-color:#FFFFFF;
+	font-size: 10pt;
+	line-height: 1.8;
+}
+a:link, a:visited{
+	color: #999;
+	text-decoration: none;
+	border: 0;
+}
+a:hover {
+	text-decoration: none;
+	color: #999;
+	border: 0;
+}
+input {
+	border: 1px solid #ccc;
+	background-color: #f2f2f2;
+	color: #a2a2a2;
+}
+input.image {
+	border: 0px;
+}
+h1{
+	font-size: 160%;
+	color: #999;
+	text-align: center;
+	font-weight: normal;
+}
+h2{
+	font-size: 140%;
+	color: #999;
+	text-align: center;
+	font-weight: normal;
+}
+h3{
+	font-size: 120%;
+	color: #999;
+	text-align: center;
+}
+
+
+/* Big titles for some apps */
+.titoltaronja {
+	font-size: 40px;
+	color: orange;
+	text-align: right;
+	margin-right: 70px;
+}
+

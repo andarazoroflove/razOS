@@ -1,0 +1,11 @@
+/* eyeBoard */
+.hrboard {
+	border: 1px solid #c0ec81;
+	width: 80%;
+}
+.userbox {
+	font-size: 10px;
+	color: #ffc572;
+	text-align: right;
+	margin-right: 20px;
+}

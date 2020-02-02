@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<eyeosApps>
+  <title>eyeOS Application Manager</title>
+  <helpfile>index</helpfile>
+  <window height='460' width='690'  static='yes' />
+  <param>
+    <appsite></appsite>
+    <applist></applist>
+  </param>
+</eyeosApps>

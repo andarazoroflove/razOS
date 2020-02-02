@@ -1,0 +1,99 @@
+<html>
+<head>
+<script type="text/javascript">
+function on(obj) {
+  div = document.getElementById(obj);
+  div.style.display = 'block';
+}
+function off(obj) {
+  div = document.getElementById(obj);
+  div.style.display = 'none';
+}
+</script>
+<style>
+body {font-family:Arial, verdana;font-size:12px;}
+a {text-decoration:none;display:block;color:#000;}
+a:hover {text-decoration:none;display:block;background-color:#fff;height:25px;color:#000;}
+.name {text-align:right;font-weight:bold;}
+</style>
+</head>
+<body>
+<div style="position:absolute;top:1px;bottom:1px;left:1px;right:1px;">
+  <div style="position:absolute;top:1px;left:1px;right:1px;height:30px;border-bottom:1px solid #cacaca;">
+    <div style="position:absolute;right:230px;top:3px;width:75px;height:25px;text-align:center;border-left:1px solid #cacaca;"><a href="#" onClick="off('about');on('menu1');off('menu2');off('menu3');off('start');">Information</a></div>
+    <div style="position:absolute;right:1px;top:3px;width:75px;height:25px;text-align:center;border-left:1px solid #cacaca;"><a href="#" onClick="on('about');off('menu1');off('menu2');off('menu3');off('start');">Author</a></div>
+    <div style="position:absolute;right:76px;top:3px;width:75px;height:25px;text-align:center;border-left:1px solid #cacaca;"><a href="#" onClick="off('about');off('menu1');off('menu2');on('menu3');off('start');">Strategy</a></div>
+    <div style="position:absolute;right:152px;top:3px;width:75px;height:25px;text-align:center;border-left:1px solid #cacaca;"><a href="#" onClick="off('about');off('menu1');on('menu2');off('menu3');off('start');">Rules</a></div>
+  </div>
+  <div style="position:absolute;top:31px;left:1px;right:1px;bottom:1px;display:none;" id="about" name="about">
+  <h1 style="font-size:16px;font-weight:bold;padding-left:10px;"><u>Author</u></h1>
+  <img src="Images/merlin.png" style="float:left;margin:4px;padding:4px;">
+  <table border="0" width="50%" cellspacing="4">
+  <tr><td class="name">Author:</td><td>MERLIN</td></tr>
+  <tr><td class="name">E-Mail:</td><td>tmerlin(at)boo.pl</td></tr>
+  <tr><td class="name">Website:</td><td><a href="/desktop.php?a=eyeNav.eyeapp&url=http://www.tmerlin.boo.pl">http://www.tmerlin.boo.pl</a></td></tr>
+  <tr><td class="name">Application:</td><td>GO</td></tr>
+  <tr><td class="name">Version:</td><td>1.0</td></tr>
+  <tr><td class="name">Date:</td><td>17.05.2006</td></tr>
+  <tr><td class="name">Licence:</td><td>GPL</td></tr>
+  </table>
+  </div>
+  <div style="position:absolute;top:31px;left:1px;right:1px;bottom:1px;display:none;" name="menu1" id="menu1">
+  <h1 style="font-size:16px;font-weight:bold;padding-left:10px;"><u>Information</u></h1>
+  <img src="Images/GO.png" style="margin:4px;float:left;"><strong>Go</strong>, also known as Wéiqí in Mandarin Chinese , and Baduk in Korean, is a strategic, deterministic two-player board game originating in ancient China, before 200 BC. The game is now popular throughout East Asia and on the Internet. The object of the game is to place stones so they control a larger board territory than one's opponent, while preventing them from being surrounded and captured by the opponent.<br>
+  <br>
+  The English name Go originated from the Japanese pronunciation "go" of the Chinese characters 棋/碁; in Japanese the name is written 碁. The Chinese name Wéiqí roughly translates as "encirclement chess", the "board game of surrounding", or the "enclosing game".<br> 
+  </div>
+  <div style="position:absolute;top:31px;left:1px;right:1px;bottom:1px;display:none;" name="menu2" id="menu2">
+  <h1 style="font-size:16px;font-weight:bold;padding-left:10px;"><u>Rules</u></h1>
+  <strong>Basic rules</strong><br>
+  <ul>
+    <li>Two players, black and white, take turns placing a stone (game piece) on the points (intersections) of a 19 by 19 board (grid). Black moves first.</li>
+    <li>Stones must have liberties (empty adjacent points) to remain on the board. Stones connected by lines are called chains, and share their liberties.</li>
+    <li>When a stone or a chain of stones is surrounded by opponent stones, so that it has no more liberties, it is captured and removed from the board.</li>
+    <li>If a stone has no liberties as soon as it is played, but simultaneously removes the last liberty from one or more of the opponent's chains, the opponent's chains are captured and the played stone is not.</li>
+    <li>"Ko rule": A stone cannot be played on a particular point if doing so would recreate the board position that existed after the same player's previous turn.</li>
+    <li>A player may pass instead of placing a stone. When both players pass consecutively, the game ends and is then scored.</li>
+  </ul>
+<br>
+A player's score is the number of empty points enclosed only by his stones plus the number of points occupied by his stones. The player with the higher score wins. (Note that there are other rulesets that count the score differently, yet almost always produce the same result.) For a more detailed treatment, see Rules of Go.<br>
+<br>
+This is the essence of the game of Go. The risk of capture means that stones must work together to control territory, which makes the gameplay very complex and interesting. (Also see strategy.)<br>
+<br>
+Go allows one to play not only even games (games between players of roughly equal strength) but also handicap games (games between players of unequal strength); see optional rules.<br>
+<br>
+<strong>Optional rules</strong><br>
+<br>
+Optional Go rules may set the following:<br>
+<ul>
+    <li>compensation points, almost always for the second player, see komi;</li>
+    <li>compensation stones placed on the board before alternate play, allowing players of different strengths to play interesting games (see Go handicap for more information).</li>
+</ul>    
+<br>
+  </div>
+  <div style="position:absolute;top:31px;left:1px;right:1px;bottom:1px;display:none;" name="menu3" id="menu3">
+  <h1 style="font-size:16px;font-weight:bold;padding-left:10px;"><u>Strategy</u></h1>
+  Basic strategic aspects include the following:<br>
+  <ul>
+    <li>Connection: Keeping one's own stones connected means that fewer groups need defense.</li>
+    <li>Cut: Keeping opposing stones disconnected means that the opponent needs to defend more groups.</li>
+    <li>Life: This is the ability of stones to permanently avoid capture. The simplest way is for the group to surround two "eyes" (separate empty areas), so that filling one eye will not kill the group and is therefore suicidal.</li>
+    <li>Death: The absence of life, resulting in the removal of a group.</li>
+    <li>Invasion: Penetration into an opponents claimed territory as a means of swaying the balance of territory.</li>
+  </ul>
+  <br>
+  </div>
+  <div style="position:absolute;top:31px;left:1px;right:1px;bottom:1px;display:show;" name="start" id="start">
+  <h1 style="font-size:16px;font-weight:bold;padding-left:10px;"><u>Overview of the game</u></h1>
+  The game of Go is played by alternately placing stones on a grid. The two players, black and white, engage to maximize the territory they control, seeking to surround large areas of the board with their stones, to entrap any opposing stones that invade these areas, and to protect their own stones from capture.<br>
+<br>
+The strategy involved can become very subtle and complex. Some high-level players spend years perfecting strategy. Go is considered by some to be the ultimate strategy game, superior in depth of complexity to Chess, Xiangqi, and Shogi.<br>
+<br>
+Go is typically classified as an abstract board game. However, a resemblance between the game of Go and war is often suggested. The Chinese classic The Art of War, for instance, has sometimes been applied to Go strategy as well. On the other hand, general strategies of Go are well described by proverbs and are applied in other contexts such as management.<br>
+<br>
+Real wars end when the participants sign treaties. Likewise, in Go, the players have to agree that the game has ended. Only then are the score and the winner finally determined.<br>
+  <br>
+  </div>
+</div>
+</body>
+</html>

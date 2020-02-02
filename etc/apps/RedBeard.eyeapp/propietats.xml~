@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<eyeOSapp>
+  <title>Red Beard for eyeOS</title>
+  <version>1.0</version>
+  <author>Robbie Ferguson, www.eyeos.ca</author>
+  <window>
+    <height>460</height>
+    <width>605</width>
+    <x_pos>100</x_pos>
+    <y_pos>20</y_pos>
+    <fullscreen>no</fullscreen>
+    <resize>no</resize>
+  </window>
+</eyeOSapp>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<eyeOSapp>
+  <title>Google Maps</title>
+  <version>1.0</version>
+  <author>TMerlin</author>
+  <window>
+    <height>480</height>
+    <width>740</width>
+  </window>
+</eyeOSapp>

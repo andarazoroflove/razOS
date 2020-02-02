@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<eyeOSapp>
+  <title>Biorythm</title>
+  <version>1.4</version>
+  <author>TMerlin</author>
+  <window>
+    <height>360</height>
+    <width>400</width>
+  </window>
+</eyeOSapp>

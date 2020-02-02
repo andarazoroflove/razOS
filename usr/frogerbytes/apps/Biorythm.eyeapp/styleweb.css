@@ -1,0 +1,45 @@
+body{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	font-size: 10pt;
+	line-height: 1.7;
+	color: #898989;
+}
+a.orange:link {
+	color: #ffffff;
+}
+a:link, a:visited{
+	color: #999999;
+	text-decoration: none;
+	border: 0;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #ff9c00;
+	border: 0;
+}
+
+#menu {
+  width:160px;
+  border:1px solid #ddd;
+  float:right;
+  padding:3px;
+}
+
+#bookmarks {
+  width:160px;
+  float:right;
+  padding:3px;
+  height: 202px;
+  border:1px solid #ddd;
+  overflow:auto;
+  margin-top:10px;
+}
+
+#bookmarks h1 {
+  padding:0px;
+  margin:0px;
+  font-weight:bold ;
+  border-bottom:1px solid #888 ;
+  font-size:12px;
+}

@@ -1,0 +1,15 @@
+Good day,
+
+The &eyeos; server has received a request from &ipaddr; to create a new account 
+named &usr;
+
+To validate your new account click on the link below or copy/paste the URL 
+into your browser address bar. Accounts are inactive until validated and 
+will be purged if validation is not received within 7 days.
+
+&validate;
+
+If you did not make this request then we apologise, take no action and the 
+account will be purged after 7 days.
+
+  -- &eyeos; team

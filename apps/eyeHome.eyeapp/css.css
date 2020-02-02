@@ -1,0 +1,18 @@
+.actions {
+	color: #fa912a;
+	font-size: 12pt;
+	text-align: center;
+}
+.sright {
+	float:right; 
+	padding-right:5px;
+	padding-top: 3px;
+}
+a.sleft:link, a.sleft:visited{
+	color: #4078bc;
+	font-size: 12pt;
+}
+.sleft {
+	float:left; 
+	padding-left:5px;
+}

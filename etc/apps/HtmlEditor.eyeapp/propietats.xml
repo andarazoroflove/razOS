@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<eyeOSapp>
+  <title>HTML Editor</title>
+  <version>1.0</version>
+  <author>TMerlin</author>
+  <window>
+    <height>470</height>
+    <width>680</width>
+  </window>
+</eyeOSapp>

@@ -1,0 +1,194 @@
+                          eyeOS 0.9.0 series change log
+                          =============================
+----------------------------------------------------------------------------
+
+0.9.0-4b  -----> released as eyeOS 0.9.0-4
+
+----------------------------------------------------------------------------
+0.9.0-4a to 0.9.0-4b 
+--------------------
+File apps/eyeRSS.eayapp/eyeRSS.js
+
+line 15 :         ele = getElementsByClass (ele, 'rssShow');
+       =>          ele = getElementsByClass (app, 'rssShow');
+
+
+line 19 :         ele = getElementsByClass (ele, 'RSSFeedId', 'div')[0];
+         =>        ele = getElementsByClass (app, 'RSSFeedId', 'div')[0];
+
+0.9.0-3 to 0.9.0-4a 
+--------------------
+File login/index.php
+  -Line 17: Added the number of users if system/infousers.txt or infousers.txt exists
+  -Lines 41, 84: Added link to eyeOS.org in the text "visite eyeOS main Website", 
+   and in "running eyeOS vX.Y.Z-%"
+
+Files index.php, desktop.php, system/install.php, login/index.php
+  -Added the new shortcut icon for browsers (with transparency).
+
+File apps/eyeBoard.eyeapp/aplic.php
+  -Line 28: Changed the name of the archive file from "Archive-eyeBoard.eyeapp.html" to
+   "Archive-eyeBoard.html" because caused overflow in eyeHome
+
+File apps/eyeInfo.eyeapp/aplic.php
+  -Lines 13-17: 
+    -Added the "Support eyeOS" button, which links to the Donate page inside eyeNav.
+    -Moved the "eyeos.org" link to the logo image, which still shows the version number 
+      in alt and title properties.
+----------------------------------------------------------------------------
+
+0.9.0-3d  -----> released as eyeOS 0.9.0-3
+
+----------------------------------------------------------------------------
+0.9.0-3c to 0.9.0-3d 
+--------------------
+
+File apps/eyeCalendar.eyeapp/calendar.js. Line 284:
+
+Added:
+  while (cal && (!cal.className || !cal.className.match (/(^|\s+)eyeapp(\s+|$)/i)))
+    cal = cal.parentNode;
+
+Removed animus theme from default eyeOS
+
+
+----------------------------------------------------------------------------
+
+0.9.0-3b to 0.9.0-3c 
+--------------------
+
+No code changes
+
+Removed apps/eyeEdit.eyeapp/propietats.xml~1~
+Removed system/scripts/#x_eyeOSwin.js#
+Moved CHANGES to changes.txt
+
+----------------------------------------------------------------------------
+
+0.9.0-3a to 0.9.0-3b 
+--------------------
+
+No code changes
+
+File CHANGES
+Reorganized file, removed bug list into separate file and added fixes omitted
+in -2 to -3a changes
+
+File known-bugs.txt
+  New fie listing known bugs in this release, remove them as they are fixed so
+  this list shows only actual system bugs.
+
+----------------------------------------------------------------------------
+
+0.9.0-2 to 0.9.0-3a 
+-------------------
+Changed htmlentites to htmlspecialchars in funcions.php -> userinput() 
+for avoiding language-specific characters to be converted.
+
+Solved "Reply" button in eyeMessages when SHOW_USER_LISTS = no 
+(showing user name in text box now)
+
+Corrected width and height for .icnbrossa (Trash Icon layer) in Default and 
+BlueIris themes
+
+Renamed changes.txt to CHANGES
+
+Fix for config apps appearing on other apps windows when multiple apps with 
+config buttons open:
+In system/scripts/x-eyeOSwin.js remove lines : 220,221
+
+  else
+    !node || (node = document);
+
+With fix above, eyeCalendar stopped working ! Fix :
+In apps/eyeCalendar.eyeapp/calendar.js line 307 
+From :
+  ele = getElementsByClass (ele, 'Cal_today');
+
+To :
+  ele = getElementsByClass (cal, 'Cal_today');
+
+----------------------------------------------------------------------------
+
+X0.9.0-2b to X0.9.0-2e  -----> released as eyeOS 0.9.0-2
+----------------------
+
+Added new function in funcions.php: userinput(), which corrects possible issues
+in user-input text in some apps.
+
+----------------------------------------------------------------------------
+
+X0.9.0-2a to X0.9.0-2b
+----------------------
+
+system/scripts/x_eyeOSwin.js
+  Changed function closeAll (used in system session close) to following :
+
+  function closeAll () {
+    sysCall ('sys', 'wclose', '*', null, null, false);
+    window.location = "index.php";
+  }
+
+  This makes the syscall synchronous and we wait for the server before asking 
+  for the login screen. This solves the session close not working issue
+
+
+system/scripts/x_eyeOSwin.js
+on eyeOS.info and eyeOSdemo [but not on my local system] running IE cannot 
+  close apps or exit session ("Object error"), window move gives same error 
+  (and a more useful "Cannot create moverequest" message) 
+
+  The issue is creating the HTTPrequest object, the "object Error" is an alert 
+  when an MS HTTPreq object is not created
+
+  Rewrote the newRequest function. The new function will alert IE users to the 
+  fact that their configuration does not allow HTTPrequest creation and 
+  indicates how to correct that  
+  
+index.php
+  line 244 changed heaader from
+  
+    header('Location: desktop.php');
+ to
+    header('Location: desktop.php' . (@$a ? '?a='.urlencode($a) : ''));
+
+   This passes to desktop the apps to autorun.
+ 
+ 
+eyemessages.eyeapp/applic.php
+  (check) was not working
+  
+  line 26 changed from 
+    if ($autorun = (is_file ($msrc) && (filemtime ($msrc) > $appinfo['state.lastread'])))
+  to
+    if ((substr($mf, 0,1) != '.') && $autorun = (is_file ("$msrc$mf") && (filemtime ("$msrc$mf") > $appinfo['state.lastread'])))
+
+----------------------------------------------------------------------------
+
+0.9.0-1 to X0.9.0-2a 
+--------------------
+
+apps/eyeNav.eyeapp/aplic.php: 
+   SOLVED BROKEN IMAGE
+
+
+apps/eyeEdit.eyeapp/aplic.php: 
+   SOLVED OVERFLOW HEIGHT TOO BIG
+
+
+system/funcions.php:(showAppIcon function)
+   CHANGED WIDTH FOR IE TO NEW WIDTH OF ICONS
+
+
+system/funcions.php:(AppIcon function):
+  
+   showAppIcon ($imgsrc = $appicons[(isset ($_SESSION['apps'][$app]) && !empty($appicons[1])) ?  1 : 0], $app);
+ to
+   showAppIcon ($imgsrc = $appicons[(isset ($_SESSION['apps'][basename($app)]) && !empty($appicons[1])) ?  1 : 0], $app);
+
+   Reason: App was coming from $_SESSION['usrinfo']['apps'] - app list- and contained the URL to the app 
+   (for example, apps/eyeEdit.eyeapp). For correctly showing the ico_b.png (with the error was showed always
+   ico_c.png) we need the basename of the app (just the name of it), that is what SESSION(apps) contain.
+
+
+Added BlueIris as default theme (size > 1MB... :( )

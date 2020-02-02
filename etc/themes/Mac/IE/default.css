@@ -1,0 +1,52 @@
+.bsupesq {
+	background: url(1.png);
+}
+
+.bsupcen {
+	width: expression(this.parentNode.offsetWidth-22-13);
+	background: url(2.png);
+}
+		
+.bsupdre {
+	background: url(3.png);
+}
+
+.binfesq {
+	background: url(4.png);
+}
+
+.binfcen {
+	width: expression(this.parentNode.offsetWidth-22-13);
+	background: url(5.png);
+}
+
+.binfdre {
+	background: url(6.png);
+}
+
+.txt {
+	background: url(9.png);
+	background-repeat: repeat-x;
+	width: expression(this.parentNode.offsetWidth-0-10);
+	height: expression(this.parentNode.offsetHeight-21-21);
+	background-color: #FEFEFE;
+}
+
+.bdre {
+	height: expression(this.parentNode.offsetHeight-21-21);
+	background: url(10.png);
+}
+	
+.interior {
+	width: expression(this.parentNode.offsetWidth-8-5);
+	height: expression(this.parentNode.offsetHeight-2-8);
+}
+
+
+
+#barraicones {
+	background-image: url(dock.png);
+	bottom: -1px;
+}
+
+

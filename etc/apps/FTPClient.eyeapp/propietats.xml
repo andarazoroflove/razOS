@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<eyeOSapp>
+  <title>FTP Client</title>
+  <version>1.0</version>
+  <author>TMerlin</author>
+  <window>
+    <height>472</height>
+    <width>656</width>
+    <resize>no</resize>
+  </window>
+</eyeOSapp>

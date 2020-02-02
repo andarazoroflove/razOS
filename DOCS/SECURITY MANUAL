@@ -1,0 +1,61 @@
+Security Manual for eyeOS >= 0.8.5
+----------------------------------
+
+The security of web applications is a complex issue depending, as it does, on a number of components, the principal ones being :
+
+   -The underlying operating system
+   -The web server software
+   -The PHP installation
+   -The eyeOS code
+
+A vulnerability in any one component can leave all other components open to abuse. Not all components are under control of the user who must then work within the configuration as defined. There are numerous texts available on how to secure web servers and PHP installations and we encourage you to refer to those which cover your particular installations. This document addresses primarily the issues relating directly to the eyeOS code.
+
+The required level of security depends upon the use being made of the system. An eyeOS system used as a private PIM for a single user on a single machine does not necessarily need a sophisticated security analysis. On the other hand, careful consideration must be given to an eyeOS installation on a public server and providing service to a wide range of users. Further security measures may be required depending on the sensitivity of the information being kept in the eyeOS system. Obviously special care must be taken to ensure that any private data is protected to the greatest extent possible.
+
+Security and convenience are often in conflict.  An appropriatest compromise must be set. That compromise depends on the various factors described in this paper. Establishing a public open access eyeOS system should not be undertaken lightly. Multiple security aspects must be understood and decisions made as to acceptable risks and necessary security.  The eyeOS team have chosen to make the default configuration as open and free as possible, it is up the the installation manager to implement all security features the consider appropriate and necessary for their system.
+
+eyeOS is a very flexible system providing a wide range of possible services. Some of these are not compatible with the operation of a fully secure system. For example, a default eyeOS system provides facilities to allow any user to upload new applications which could, potentially, become security risks. 
+
+The eyeOS team can make no guarantees on the security of any eyeOS installation, we will, however, strive to ensure that the eyeOS PHP code is as secure as possible and  provide security options wherever possible.
+
+The rest of this document lists a number of features of eyeOS which help provide a more or less secure system.  Some of these will require more or less limited access to the server file system and knowledge of basic system administration terms and techniques.
+
+
+General file and directory permissions
+---------------------------------------
+
+The server file system may provide some level of protection from abuse by non authorized users.  The eyeOS system requires write access to certain directories and files, on some systems that access may need to be provide outside the eyeOS system. 
+
+Other than the etc/, usr/ and etc/ directories (and the usr_apps/ directory if enabled) eyeOS does not require write access to the other files and directories which may be write disabled for an additional level of security. Note, however, that those files and directories will need to be write re-enabled in order to perform system updates.
+
+
+File browsing protection
+------------------------
+
+The entire eyeOS files system for all users is by necessity a part of the web accessible file system. This means that a user may gain access to any file by the fact of knowing its name and location and typing in that URL.  Most eyeOS configuration information is stored in .xml format which is readily browsable. In order to hide the configuration data, which may include encrypted passwords, you can change various system parameters in the installation advanced security parameters. A suitable change would be to change all .xml files to .php which cannot be browsed from a simple URL. 
+
+In general it is impossible to guarantee that one eyeOS user file cannot be accessed from another user name, all files being stored within the same web space.  However, if the names of the /usr and /home directories are changed in the advanced parameters, a malicious user will be ignorant of the actual names used.
+
+For added security in multi-user, public systems it is also recommended that the name of the root user be changed.
+
+It is possible to restrict users from accessing any files and directories other that those specifically granted. This is done using the web browser security facilities. This would add another layer to the security system making it more secure at the cost of an inconvenient second login.
+
+
+Application Loading
+-------------------
+
+The default eyeOS configuration allows any user to upload into the eyeOS space applications of the appropriate format. This is clearly a potential security vulnerability. It is relatively easy to write an eyeOS application which will allow a user to browse the file system. An option in the sysdefs.php file allows two levels of restriction on application loading. The first is to limit application uploading to only the root user, the second disables all application uploads. Added security can be provided by removing the eyeApps.eyeapp application in the /apps directory if its other features are not necessary.
+
+The root user may limit any particular user as to the applications they are allowed to run by editing the usrinfo.xml file in that users /usr directory. The apps element is a comma separated list of applications which will appear on the users desktop icon bar.  If the eyeApps.eyeapp  app is not listed than that user will be unable to change that list of apps.
+
+
+Passwords
+---------
+
+Though not specific to eyeOS the question of password is fundamental to good security. Use long rather than short ones, mix upper and lower case with one or more numeric and punctuation characters.
+
+
+Sysdefs.php
+-----------
+
+The sysdefs.php file is used to specify certain core system parameters. It is automatically loaded whenever and eyeOS request is made. Certain values can be changed in this file BEFORE eyeOS installation by the use of the installation advanced security parameters panel. Note that if any changes are made to these parameters, special care will be needed when upgrading the eyeOS base system.

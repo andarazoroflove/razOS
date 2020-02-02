@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<eyeOSapp>
+  <author> Pau Garcia-Milà, Hans PUFAL </author>
+  <version>0.9.1</version>
+  <title>eyeCalendar</title>
+  <window height='340' width='600' />
+  <helpfile>index</helpfile>
+  <param>
+    <week_start args='type:num;'>1</week_start>
+    <startcheck args='label:Days to search for note on startup check; type:int;'>2</startcheck> 
+    <note_header args='label:Note title message;' >Note for %l %d %F %Y</note_header>
+    <toolbar_today args='label:Toolbar today ;' >Today is %l %d %F %Y</toolbar_today>
+    <time args='label:Clock display format; type:str;'>%Hh%i</time>
+    <auto_save args='label:Autosave on note edit; type:bool;'>0</auto_save>
+    <del_confirm args='label:Confirm note deletes; type:bool;'>1</del_confirm>
+    <week_no args='label:Show week numbers; type:bool;'>0</week_no>
+  </param>
+</eyeOSapp>
+

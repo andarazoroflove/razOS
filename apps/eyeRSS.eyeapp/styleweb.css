@@ -1,0 +1,13 @@
+a:hover {
+	text-decoration: underline;
+	color: #ff9c00;
+	border: 0;
+}
+#bookmarks h1 {
+  padding:0px;
+  margin:0px;
+  margin-bottom: 5px;
+  font-weight:bold ;
+  border-bottom:1px solid #ccc ;
+  font-size:12px;
+}

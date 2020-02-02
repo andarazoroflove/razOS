@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<eyeCalc>
+  <title>eyeCalc</title>
+  <window height='420' width='240'>
+     <fullscreen>no</fullscreen>
+  </window>
+  <state>  
+    <dp>,</dp>
+  </state>
+</eyeCalc>

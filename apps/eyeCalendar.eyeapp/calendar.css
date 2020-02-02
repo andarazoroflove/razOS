@@ -1,0 +1,12 @@
+/* Calendar styles */
+
+.cal {font-family: Arial, Helvetica, sans-serif; font-size: 11.5pt; padding:3px; text-align: center; color: Green; background-color:#EFE;}
+.cal .month { border-bottom: 4px groove black; background-color:inherit; color: Black; font-size: 13.5pt;} 
+.cal .prev, .cal .next  {border-bottom: 4px groove black; color:Black;}
+.cal .day  {border-bottom: 1px solid black; color:Black;}
+.cal .d0, .cal .d6 {color:#44F}
+.cal .holiday {background-color: #BBB; border: 1px dashed #BBB; }
+.cal .event {background-color:#CCC; border: 1px dashed #888;}
+.cal .selected {background-color:#8F8;}
+.cal .today { border: 1px solid red; color:red}
+.cal .weekno { font-size: 8pt;}

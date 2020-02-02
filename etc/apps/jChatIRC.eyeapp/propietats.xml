@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<eyeOSapp>
+  <title>jChatIRC</title>
+  <version>0.1</version>
+  <window height='560' width='904'>
+     <fullscreen>no</fullscreen>
+     <resize>no</resize>
+     <x_pos>200</x_pos>
+     <y_pos>40</y_pos>
+  </window>
+  <infofile>README</infofile>
+</eyeOSapp>

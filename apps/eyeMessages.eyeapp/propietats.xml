@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<eyeOSapp>
+  <title>eyeMessages</title>
+  <helpfile>index</helpfile>
+  <window>
+    <height>400</height>
+    <width>580</width>
+  </window>
+  <param>
+    <columns args='label:Order of the columns; '>del,from,title,date,type</columns>
+  </param>
+</eyeOSapp>

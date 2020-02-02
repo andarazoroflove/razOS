@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>eyeApp : eyeRSS RSS viewer</title>
+<style>
+p {text-align:justify;}
+p, pre {padding:0 1em 0 1em;}
+pre {color:green; font-size:80%;}
+body {color: #444;}
+</style>
+</head>
+<body>
+<!-- 
+=============================================================
+Help document for eyeOS eyeRSS
+Written by: Hans B PUFAL 
+On-line version available at: http://www.eyeos.org/wiki
+=============================================================
+-->
+
+<a name="top">
+<img src="ico_c.png" align="right"><h1>eyeRSS Help</h1>
+<a href="#part1">1. Introduction</a><br>
+<a href="#part3">4. User configuration options</a><br>
+ 
+<a name="part1">
+<h2>Introduction</h2>
+<p>eyeRSS provides a simple RSS feed viewer.</p> 
+<p>When you launch the eyeRSS application, the last RSS feed that you viewed will
+be loaded. The very first time you use eyeRSS, you will need to set the URL
+of an RSS feed into the feed text area at the top of the right panel, then click
+the 'Add Feed' button.</p>
+<p>The panel on the right shows the various feeds that you have bookmarked for
+viewing. To select a feed for viewing simply click its name in the list. To 
+delete a feed from the list click on the corresponding delete icon. New feeds 
+can be added to the list by entering their URL into the text box at the top of
+the panel and clicking on the 'Add Feed' button. The new feed data will appear 
+in the panel on the left and its name will be appended to the list in the right
+panel.
+<p>The panel on the left shows the feed data. The title of the feed currently
+being displaye dis shown in the action bar. Feed items are displayed, 
+separated by horizontal rules and in the order that they appear in the feed.
+The feed item title is displayed in large font and clicking on it will start
+eyeNav displaying the web page to which the feed item refers. A feed item may
+also specify a time stamp which is displayed below and to the right of the 
+title. An item description is displayed below the title and above any timestamp.
+<p>If the user option to display only titles is set, then descriptions are not
+displayed but items with a descripton will have a small "expand" icon on the 
+right. Clicking that icon will scroll the item data list until the one 
+corresponding to the icon clicked is at the top of the panel. The description 
+for that, and only that item will be displayed. Opening a different description
+display will close the one curently open.</p>
+
+<center><a href="#top">Back to top</a></center>
+
+<a name="part3"></a>
+<h2><b>User configuration Options</b></h2>
+<p>Clicking on the user configuration icon on the window bar causes the user 
+configuration panel to appear. This provideds a number of options which may be 
+modified by the user. 
+The values of these options are saved on a per user basis.</p>
+<p>Changing any of these configuration options will cause the current feed to
+be reloaded and redisplayed using the newly set values.</p>
+
+<dl>
+<dt><b><a name='article-count'></a>Articles to show</b></dt>
+<dd>This option limits the number of articles displayed from a data feed to
+the value specified. If a value of zero is set then all feed items will be 
+displayed.</dd> 
+
+<dt><b><a name='headlines-only'></a>Headlines Only</b></dt>
+<dd>When active, this option will display items without their descripion fields,
+which can sometimes be long. Any one item description can be displayed by 
+clicking on the corresponding expand icon to the right of the entry. If no expand
+icon appears then the item has no description.</dd>
+
+<dt><b><a name='clock-display'></a>Clock display format</b></dt>
+<dd>A string specifying the format of the clock displayed at the right of the
+tool bar. The string should contain format controls which are the '%' character
+followed by a recognised control character from the table below. These format
+controls are replaced by the corresponding values:
+<table align='center'>
+  <tr><td align='right'> %a </td><td>&nbsp;&nbsp;</td><td>'am or 'pm'</td></tr>
+  <tr><td align='right'> %A </td><td></td><td>'AM' or 'PM'</td></tr>
+  <tr><td align='right'> %g </td><td></td><td>Hours as value 1 to 12</td></tr>
+  <tr><td align='right'> %G </td><td></td><td>Hours as value 0 to 23</td></tr>
+  <tr><td align='right'> %h </td><td></td><td>Hours as value 01 to 12</td></tr>
+  <tr><td align='right'> %H </td><td></td><td>Hours as value 00 to 23</td></tr>
+  <tr><td align='right'> %i </td><td></td><td>Minutes as value 00 to 59</td></tr>
+  <tr><td align='right'> %s </td><td></td><td>Seconds as value 00 to 59</td></tr>
+  <tr><td align='right'> ~ </td><td></td><td>A colon character flashing once per second<br/>(note no %)</td></tr>
+</table></dd>
+
+<br/>
+<center><a href="#top">Back to top</a></center>
+
+</body>
+</html>

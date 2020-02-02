@@ -1,0 +1,29 @@
+body{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	font-size: 10pt;
+	line-height: 1.7;
+	color: #898989;
+}
+a.orange:link {
+	color: #ffffff;
+}
+a:link, a:visited{
+	color: #999999;
+	text-decoration: none;
+	border: 0;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #ff9c00;
+	border: 0;
+}
+
+#bookmarks h1 {
+  padding:0px;
+  margin:0px;
+  margin-bottom: 5px;
+  font-weight:bold ;
+  border-bottom:1px solid #ccc ;
+  font-size:12px;
+} 

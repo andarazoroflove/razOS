@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>eyeBoard</title>
+</head>
+<body>
+<body style="color: #888;">
+
+<p>eyeBoard is a tag board program. Each user can add new text, and superuser can empty the
+whole log. A header shows the time and name of the user who posted each message.</p> 
+
+<p>At the user's option, the time of last viewing can be saved and the
+application can be invoked at login time to show the bulletin board only
+if it has ben updated since the last viewing.</p>
+
+<p>To have eyeBoard check for updates at each logon and only show the board if it has
+changed since the last time you displayed it use the app manager to autorun eyeBoard with
+an argument of '(check)'. Now at logon time, eyeBoard will run and check if the board has been changed since
+the last time it recorded you displaying it. If no changes have been made, 
+eyeBoard will terminate. If the board has been updated it will be displayed as normal.</p>
+
+<hr/>
+
+<p>The program properties are :</p>
+
+<pre>
+&lt;eyeBoard>
+  &lt;title>$Bulletin Board&lt;/title>		// The title bar string
+  &lt;motd>etc/taulell&lt;/motd>			// The file saving the text
+
+  &lt;window height='330' width='590' />		// Window size
+
+  &lt;parameters>
+    &lt;cols> 60&lt;/cols>				// Width of textarea
+    &lt;rows> 20&lt;/rows>				// Height of textarea
+    &lt;date>D d F Y&lt;/date>			// Date format string (see Date in PHP doc)
+    &lt;time>G:i&lt;/time>				// Time format sring (see Date in PHP doc)
+  &lt;/parameters>
+
+  &lt;save>
+     &lt;lastread/>				// If defined will save last view time
+  &lt;/save>
+
+&lt;/eyeBoard>
+</pre>
+
+</body>
+</html>
+

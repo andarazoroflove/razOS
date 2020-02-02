@@ -1,0 +1,20 @@
+QUICK UPGRADE MANUAL FOR eyeOS
+------------------------------
+
+This manual is for upgrade eyeOS v0.8.x to v0.9.0.
+
+1) Download the latest version of eyeOS from http://www.eyeOS.org.
+
+2) Uncompress the package to a local dir.
+
+3) Upload and replace all directories and files except the following directories:
+
+ etc/
+ home/
+ usr/
+
+5) Run index.php and you should see the new version number at the Login Screen.
+
+Please, read the SECURITY MANUAL.
+
+Enjoy eyeOS!

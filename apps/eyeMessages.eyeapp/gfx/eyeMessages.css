@@ -1,0 +1,13 @@
+
+.message.recent {color: #87bb18 }
+
+.message.evenrow {background-color: white }
+.message.oddrow {color: #6896c1 }
+   
+.message.npublic:before {content: "PUB";}   
+.message.nprivate:before {content: "PRI";}   
+.message.mboard:before {content: "BRD";}   
+.message.msg:before {content:'MSG';}
+
+.message.sorted_u:before {content:'&uArr; ';}
+.message.sorted_d:before {content:'&dArr; ';}

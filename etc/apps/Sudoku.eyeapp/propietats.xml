@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<eyeOSapp>
+  <title>Sudoku</title>
+  <version>1.0</version>
+  <author>TMerlin</author>
+  <window>
+    <height>670</height>
+    <width>440</width>
+    <resize>no</resize>
+  </window>
+</eyeOSapp>

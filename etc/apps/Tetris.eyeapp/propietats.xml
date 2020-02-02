@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<eyeOSapp>
+  <title> Tetris </title>
+  <window height='480' width='400'>
+  </window>
+  <infofile>README</infofile>
+</eyeOSapp>

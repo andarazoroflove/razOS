@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<eyeOSapp>
+  <title>eyeTrash</title>
+  <window height='420' width='660'>
+     <fullscreen>no</fullscreen>
+     <resize>no</resize>
+  </window>
+</eyeOSapp>

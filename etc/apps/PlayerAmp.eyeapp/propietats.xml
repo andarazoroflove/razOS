@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<eyeOSapp>
+  <title>PlayerAmp</title>
+  <version>1.5</version>
+  <author>TMerlin</author>
+  <window>
+    <height>490</height>
+    <width>300</width>
+  </window>
+</eyeOSapp>

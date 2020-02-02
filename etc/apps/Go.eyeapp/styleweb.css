@@ -1,0 +1,48 @@
+body{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+	font-size: 10pt;
+	line-height: 1.7;
+	color: #898989;
+}
+a.orange:link {
+	color: #ffffff;
+}
+a:link, a:visited{
+	color: #999999;
+	text-decoration: none;
+	border: 0;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #ff9c00;
+	border: 0;
+}
+
+#player_container {
+  position:absolute;
+  width:99%;
+  height:290px;
+  border:1px solid #cacaca;
+}
+
+#player_list {
+  position:absolute;
+  height:280px;
+  overflow:auto;
+  border:1px solid #cacaca;
+  left:5px;
+  top:5px;
+  right:210px;
+}
+
+#player_player {
+  position:absolute;
+  width:190px;
+  height:190px;
+  border:1px solid #cacaca;
+  right:5px;
+  top:5px;
+  text-align:center;
+  padding:5px;
+}

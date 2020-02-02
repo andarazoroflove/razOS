@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<eyeOSapp>
+  <title>Poux for eyeOS</title>
+  <version>1.0</version>
+  <author>Robbie Ferguson, www.eyeOS.ca</author>
+  <window>
+    <height>350</height>
+    <width>515</width>
+    <x_pos>100</x_pos>
+    <y_pos>20</y_pos>
+    <fullscreen>no</fullscreen>
+    <resize>no</resize>
+  </window>
+</eyeOSapp>

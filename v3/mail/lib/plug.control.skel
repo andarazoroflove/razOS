@@ -1,0 +1,6 @@
+# --------------------------------------------------------------------------- #
+# This is the plugin control file for PHlyMail 1.2+                           #
+# Please refer to the appropriate documentation for details                   #
+# You don't need to edit it by hand - use the setup tool instead              #
+# --------------------------------------------------------------------------- #
+# $action ;; $mode ;; Plugin Dir ;; Script Name ;; Reserved

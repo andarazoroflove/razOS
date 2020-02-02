@@ -1,0 +1,232 @@
+body, p, li, td, option, div, input, button, select, legend {
+    font-family: Verdana, Helvetica, Arial, Sans-Serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 8pt;
+    color: black;
+}
+
+legend {
+    color: rgb(1, 124, 179);
+}
+
+body, form {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(1, 124, 179);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.bodycolour {
+    background-color: rgb(220, 240, 255);
+}
+
+.texterror {
+    color: #800000;
+}
+
+.textsuccess {
+    color: #008000;
+}
+
+.authtext {
+    color: white;
+}
+
+.small {
+    font-size: 7pt;
+    line-height: 8pt;
+}
+
+.topteaser {
+    font-family: Arial, Verdana, Helvetica, Sans-Serif;
+    font-size: 16pt;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    padding-right: 12px;
+    padding-top: 12px;
+}
+
+.topleft {
+    width: 8px;
+    background-color: rgb(1, 154, 205);
+    border-left: 1px solid rgb(21, 184, 239);
+    border-bottom: 1px solid rgb(1, 124, 179);
+}
+
+.topright {
+    width: 8px;
+    background-color: rgb(1, 154, 205);
+    border-right: 1px solid rgb(1, 124, 179);
+    border-bottom: 1px solid rgb(1, 124, 179);
+}
+
+.topmenu {
+    vertical-align: middle;
+    font-weight: bold;
+    color: white;
+    padding: 2px;
+    padding-right: 12px;
+}
+
+.topmenu a {
+    color: white;
+}
+
+.topbody {
+    background-color: rgb(1, 154, 205);
+    border-bottom: 1px solid rgb(1, 124, 179);
+}
+
+.topoutline {
+    display: block;
+    border-right: 1px solid rgb(21, 184, 239);
+    border-bottom: 1px solid rgb(21, 184, 239);
+    border-left: 1px solid rgb(1, 124, 179);
+    border-top: 1px solid rgb(1, 124, 179);
+    padding: 0px;
+    margin-bottom: 8px;
+}
+
+.menutd {
+    background-color: rgb(255, 255, 255);
+}
+
+.menutop {
+    height: 8px;
+    background-color: rgb(1, 154, 205);
+    border-top: 1px solid rgb(21, 184, 239);
+    border-right: 1px solid rgb(1, 124, 179);
+}
+
+.menubottom {
+    height: 8px;
+    background-color: rgb(1, 154, 205);
+    border-right: 1px solid rgb(1, 124, 179);
+    border-bottom: 1px solid rgb(1, 124, 179);
+}
+
+.menubody {
+    background-color: rgb(1, 154, 205);
+    border-right: 1px solid rgb(1, 124, 179);
+}
+
+.menuoutline {
+    white-space: nowrap;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    padding-right: 3px;
+    margin: 0px;
+}
+
+.mainmenu {
+    vertical-align: middle;
+    font-weight: bold;
+    color: white;
+    margin: 0px;
+    padding: 2px;
+}
+
+div.mainmenu:hover {
+    background-color: rgb(21, 164, 215);
+}
+
+.mainmenu a {
+    color: white;
+}
+
+.mainmenu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.mainmenu .heading {
+    color: rgb(180, 210, 255); /* rgb(21, 174, 235); */
+    font-weight: bold;
+}
+
+.mainmenu .heading_d {
+    color: rgb(120, 163, 220);
+    font-weight: bold;
+}
+
+.submenu {
+    font-weight: normal;
+    color: white;
+    margin: 0px;
+    padding: 2px;
+}
+
+div.submenu:hover {
+    background-color: rgb(21, 174, 235);
+}
+
+.submenu a {
+    font-weight: normal;
+    color: white;
+}
+
+.submenu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.contthleft {
+    color: white;
+    padding: 2px;
+    background-color: rgb(1, 124, 179);;
+    border-top: 1px dotted black;
+    border-right: 1px solid rgb(1, 124, 179);
+    border-bottom: 1px dotted black;
+    border-left: 1px dotted black;
+}
+
+.contthmiddle {
+    color: white;
+    padding: 2px;
+    background-color: rgb(1, 124, 179);;
+    border-top: 1px dotted black;
+    border-right: 1px solid rgb(1, 124, 179);
+    border-bottom: 1px dotted black;
+    border-left: 1px solid rgb(1, 124, 179);
+}
+
+.contthright {
+    color: white;
+    padding: 2px;
+    background-color: rgb(1, 124, 179);;
+    border-top: 1px dotted black;
+    border-right: 1px dotted black;
+    border-bottom: 1px dotted black;
+    border-left: 1px solid rgb(1, 124, 179);
+}
+
+.conttd {
+    background-color: #EEEEEE;
+    padding: 2px;
+    border-top: 2px solid white;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<eyeOSapp>
+  <title>GO Game</title>
+  <version>1.0</version>
+  <author>TMerlin</author>
+  <window>
+    <height>360</height>
+    <width>580</width>
+  </window>
+</eyeOSapp>

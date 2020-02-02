@@ -1,0 +1,359 @@
+/* Default theme for eyeOS */
+/* Body and common parts */
+body{
+	font-family: "Century Gothic", "Lucida Grande", Verdana, Lucida, sans-serif;
+	color: #999;	
+	margin: 0px;
+	padding: 0px;
+	background-color:#FFFFFF;
+	font-size: 10pt;
+	line-height: 1.8;
+}
+a:link, a:visited{
+	color: #999;
+	text-decoration: none;
+	border: 0;
+}
+a:hover {
+	text-decoration: none;
+	color: #999;
+	border: 0;
+}
+input {
+	border: 1px solid #ccc;
+	background-color: #f2f2f2;
+	color: #a2a2a2;
+}
+input.image {
+	border: 0px;
+}
+h1{
+	font-size: 160%;
+	color: #999;
+	text-align: center;
+	font-weight: normal;
+}
+h2{
+	font-size: 140%;
+	color: #999;
+	text-align: center;
+	font-weight: normal;
+}
+h3{
+	font-size: 120%;
+	color: #999;
+	text-align: center;
+}
+
+
+/* ---------------------DESKTOP START--------------------- */
+
+/* Icon bar (dock) */
+#barraicones {
+	position: absolute; 
+	width: 700px;
+	left: 50%;
+	bottom: 12px;
+	margin-left: -350px;
+	height: 65px;
+	z-index: 31;
+	text-align: center;
+	background-image: url(desktop/dock.png);
+	background-repeat: no-repeat; 
+	background-position: center 16px;
+}
+
+/* Minimized apps dock */
+.barradebaix {
+	position:absolute;
+	z-index: 5;
+	left:0px;
+	top: 27px;
+	width:700px;
+	height:32px;
+	background: url(desktop/dockmin.png);
+	background-repeat: no-repeat; 
+	background-position: center right;
+}
+
+/* Minimized apps (when opened apps) bar */
+.barbaixobert {
+	position: absolute; 
+	left: 5px;
+	top: -27px;
+	margin-left: 5px;
+	font-size: 10pt;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+
+/* Text with the icons name */
+.coloriconstext {
+	position:absolute;
+	bottom:-17px;
+	left:310px;
+	font-size:18px;
+	color: #ffe19f;
+	text-align: center;
+}
+
+/* Close Session Button */
+.botosortir {
+	position:absolute;
+	top: 5px;
+	right: 12px;
+}
+
+/* Clock */
+.rlltg {
+	position: absolute; 
+	right: 52px;
+	top:7px;
+	z-index:1;
+	color: #999;
+	font-size: 8pt;
+}
+
+/* Trash icon */
+.icnbrossa{
+	position: absolute;
+	z-index: 2;
+	width: 55px;
+	right:18px;
+	bottom: 23px;
+}
+
+
+/* System messages */
+.missatgesistema{
+	position:fixed;
+	left:250px;
+	bottom: 74px;
+	width:700px;
+	font-size: 12pt;
+	color: #fff;
+}
+/* ---------------------DESKTOP END--------------------- */
+
+/* ---------------------WINDOW START--------------------- */
+
+/* Title bar */
+.captitol {
+	font-family: Verdana, Lucida, sans-serif;
+	position: absolute;
+	top: 2px;
+	left: -7px;
+	margin-left:20px;
+	color:#999;
+	text-align: left;
+	font-size:12px;
+	font-weight: bold;
+	z-index: 105;
+}
+
+/* Left Up Corner */
+.bsupesq {
+	position:absolute;
+	left: 0px;
+	width:13px;
+	height:21px;
+	background: url(gfxwin/1.png);
+	background-repeat: no-repeat; 
+	background-position: center left;
+}
+
+/* Right Up Corner */
+.bsupdre {
+	position:absolute;
+	right: 0px;
+	width:22px;
+	height:21px;
+	background: url(gfxwin/3.png);
+	background-repeat: no-repeat; 
+	background-position: top right;
+}
+
+/* Up Border */
+.bsupcen {
+	position:absolute;
+	right: 22px;
+	left: 13px;
+	height:21px;
+	background: url(gfxwin/2.png);
+	background-repeat: repeat-x; 
+}
+
+
+
+/* Left Down Corner */
+.binfesq {
+	position:absolute;
+	left: 0px;
+	width:13px;
+	height:21px;
+	background: url(gfxwin/4.png);
+	background-repeat: no-repeat; 
+	background-position: center left;
+}
+
+/* Right Down Corner */
+.binfdre {
+	position:absolute;
+	right: 1px;
+	width:21px;
+	height:21px;
+	background: url(gfxwin/6.png);
+	background-repeat: no-repeat; 
+	background-position: center left;
+}
+
+/* Down Border */
+.binfcen {
+	position:absolute;
+	bottom: 0px;
+	right: 22px;
+	left: 13px;
+	height:21px;
+	background: url(gfxwin/5.png);
+	background-repeat: repeat-x; 
+}
+
+/* Right border */
+.bdre {
+	position:absolute;
+	top: 21px;
+	bottom: 21px;
+	right: 0px;
+	width:13px;
+	background: url(gfxwin/10.png);
+	background-repeat: repeat-y; 
+	background-position: top right;	
+}
+
+/* Window content */
+.txt {
+	position: absolute;
+	top: 21px;
+	bottom: 21px;
+	right: 10px;
+	left: 0px;
+	text-align: left;
+	border-left: 1px solid #D3D2D2;
+	background: url(gfxwin/9.png);
+	background-repeat: repeat-x; 
+	background-position: top center;
+	z-index: 100;
+	background-color: #FEFEFE;
+}
+
+.interior {
+	position:absolute;
+	overflow: auto;
+	top: 2px;
+	right: 5px;
+	left: 8px;
+	bottom: 8px;
+}
+
+/* Window Foot */
+.peu {
+	position:absolute;
+	bottom: 0px;
+	width:100%;
+	height:21px;
+	text-align: left;
+	cursor: move;
+}
+/* Other items in windows */
+/* Maximize button */
+.boto {
+	position:absolute;
+	right: 26px;
+	top: 3px;
+	width:13px;
+	height:13px;
+	z-index: 150;
+}
+
+/* Resize image */
+.botobaix {
+	position:absolute;
+	right: -13px;
+	top: -1px;
+	width:13px;
+	height:13px;
+	z-index: 150;
+	cursor: se-resize;
+	background: url(gfxwin/resize.png);
+}
+
+/* ---------------------WINDOW END--------------------- */
+
+/* ---------------------APPS START--------------------- */
+
+/* Apps action bar */
+.actionbar {
+	position: relative;
+	margin-top: 10px;
+	width: 96%;
+	left: 2%;
+	height: 28px;
+	border: 0;
+	background: url(gfxwin/bar.png);
+	background-repeat: repeat-x; 
+	background-position: center center;
+	border-left: 2px solid #dddddd;
+	border-right: 2px solid #dddddd;
+}
+
+/* Class for some textareas */
+.llibreta{
+	background-color:transparent;
+	font-size:14px;
+	border: 2px dotted #D9D9D9;
+	color: #333;
+}
+
+/* Big titles for some apps */
+.titoltaronja {
+	font-size: 40px;
+	color: orange;
+	text-align: right;
+	margin-right: 70px;
+}
+/* ---------------------APPS END--------------------- */
+/* ---------------------BUBBLES START--------------------- */
+.bubble, .eyeConfig{
+	position:absolute; 
+	padding: 15px; 
+	border:1px solid #7C9099; 
+	display: none; 
+	background-color: #fff; 
+	z-index: 2; 
+	background-image:url("gfxwin/bubbles/background.png"); 
+	background-position: bottom; 
+	background-repeat:repeat-x;
+}
+.bubbleout {
+	position:absolute; 
+	top: -18px; 
+	left:-1px; 
+	height:18px; 
+	width:13px; 
+	background-image:url("gfxwin/bubbles/out.png");
+}
+.bubblecancel {
+	position:absolute; 
+	bottom:5px; 
+	right: 5px; 
+}
+.bubbletitle {
+	color: #4078bc;
+	font-size: 12pt;
+	font-weight: bold;
+	text-align: right;
+	margin-top: -15px;
+	margin-right: 0;
+	margin-bottom: 10px;
+}
+/* ---------------------BUBBLES END--------------------- */

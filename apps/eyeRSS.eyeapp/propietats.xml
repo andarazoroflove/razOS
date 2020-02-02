@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<eyeOSapp>
+  <title>RSS Reader</title>
+  <author>TMerlin,Hans PUFAL</author>
+  <version>0.2.1</version>
+  <window>
+    <height>490</height>
+    <width>650</width>
+  </window>
+  <helpfile>index</helpfile>
+  <param>
+    <clock args='label:Clock format; type:str;'>%H:%i</clock>
+    <headlinesonly args='label:Show headlines only; type:bool;'>0</headlinesonly>
+    <xlink args='label:Open items in new browser window instead of eyeNav; type:bool;'>0</xlink>
+    <maxarticles args='label:Maximum number of articles to show\n(0 for unlimited); type:int;'>0</maxarticles>
+  </param>
+</eyeOSapp>

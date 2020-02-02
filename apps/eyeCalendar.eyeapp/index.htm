@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>eyeApp : eyeCalendar Personal Calendar and Daytimer</title>
+<style>
+p {text-align:justify;}
+p, pre {padding:0 1em 0 1em;}
+pre {color:green; font-size:80%;}
+body {color: #444;}
+</style>
+</head>
+<body>
+<!-- 
+=============================================================
+Help document for eyeOS eyeCalendar
+Written by: David Bouley - www.virtualsky.net
+            Hans B PUFAL 
+On-line version available at: http://www.eyeos.org/wiki
+=============================================================
+-->
+
+<a name="top">
+<img src="ico_c.png" align="right"><h1>eyeCalendar Help</h1>
+<a href="#part1">1. Introduction</a><br>
+<a href="#part2">2. Adding or Editing Notes</a><br>
+<a href="#part2a">3. Autorun facilities</a><br>
+<a href="#part3">4. User configuration options</a><br>
+
+<a name="part1">
+<h2>Introduction</h2>
+<p>eyeCalender can be used as your personal day-timer.</p> 
+<p>When you launch the eyeCalendar application, you will be taken to the calendar
+entry page for the current date (determined by your browsers's system clock).
+Today's date is always shown in the toolbar and clicking on it will cause the
+calendar display to return to its initial condition.</p>
+<p>The window is divided into two panes. The left side displays a text area which
+shows, and allows the editing of, notes associated with the currently 
+<strong>Selected day.</strong>. </p>
+<p>The right side of the window displays a calendar for the current month. 
+For any calendar day that has notes assigned to it, a shaded box will be shown
+on the calendar itself. Click on any date to select it and to create or edit
+the associated notes. Clicking on the << or >> in the calendar header will display
+the previous (or next) month. Note that the selected day is not altered and any
+notes for it remain in the left pane.</p>
+<p>Clicking of the day names in the calendar header will reorder the days such 
+that the one clicked becomes the first day of the week. Any day may be so 
+selected.</p>
+
+<center><a href="#top">Back to top</a></center>
+
+<a name="part2">
+<h2>Adding or Editing Notes</h2>
+<p>To add a note to a particular date on your eyeCalendar, first select the 
+day from the calendar displayed in the window. If you need to choose a 
+different month, use the &lt;&lt; and &gt;&gt, found at the top of the calendar.
+&lt;&lt; navigates to the previous month, while &gt;&gt; navigates forward one
+month. </p>
+<p>Now select a day by clicking on a numbered box within the calendar. If a note
+already exists for the selected day then it will appear in the text-area on the
+left and a heading will show that date.</p>
+<p>Type or edit the text of the text area. Record any important message you wish
+(a reminder for a birthday, special event, or a task you need to do or have
+done, for example). </p>
+<p>As soon as the text area is changed, the the <strong>diskette</strong> or 
+<strong>Save</strong> icon which will appear at the left of the toolbar 
+indicating that the note needs saving. Clicking on that icon will send the note
+to be saved on the server and the box for this day in the calendar
+should appear with a border. If the <a href='#auto-save'>auto-save</a> 
+option is active then the save will be automatic as soon as the mouse focus 
+leaves the text-area.</p>
+<p>To remove notes for this day, click on the <strong>X</strong> on the left side 
+of the toolbar. This icon only appears when previously saved note is being 
+displayed. If the <a href='#confirm-delete'>confirm-delete</a> option is active,
+than a confirmation will be requested before the delete is performed.</p>
+
+<center><a href="#top">Back to top</a></center>
+
+<a name="part2a"></a>
+<h2><b>Autorun facilities</b></h2>
+The calendar may be started whenever the user logs in by specifying parameters 
+for eyeCalendar in the AppManager 'mangae app' panel. If an empty parametr list,
+specified as '()', is given the calendar will satrt unconditionally. If a 
+parameter of '(check)' is specified, calender will will only start if there are
+notes saved in the immediately succeeding days. The number of days to be checked
+may be specified as the second parametr , eg, '(check,5)' or, if no second 
+parameter is given, the number of days is taken from a configuration option (
+see <a href='#AutorunCheck'>below</a>)
+
+<center><a href="#top">Back to top</a></center>
+
+<a name="part3"></a>
+<h2><b>User configuration Options</b></h2>
+<p>Clicking on the user configuration icon on the window bar causes the user 
+configuration panel to appear. This provideds a number of options which may be 
+modified by the user. 
+The values of these options are saved on a per user basis.</p>
+
+<dl>
+<dt><b>Show week numbers</b></dt>
+<dd>This option turns on or off the display of the week numbers to the left of
+the calendar panel.</dd> 
+
+<dt><b><a name='confirm-delete'></a>Confirm note deletes</b></dt>
+<dd>When active, this option will cause the browser to request user confirmation
+for delete operations.</dd>
+
+<dt><a name='auto-save'></a><b>Autosave on note edit</b></dt>
+<dd>This option, when active, will cause notes to be automatically saved when 
+the mouse focus is moved out of the note text-area.</dd>
+
+<dt><b>Clock display format</b></dt>
+<dd>A string specifying the format of the clock displayed at the right of the
+tool bar. The string should contain format controls which are the '%' character
+followed by a recognised control character from the table below. These format
+controls are replaced by the corresponding values:
+<table align='center'>
+  <tr><td align='right'> %a </td><td>&nbsp;&nbsp;</td><td>'am or 'pm'</td></tr>
+  <tr><td align='right'> %A </td><td></td><td>'AM' or 'PM'</td></tr>
+  <tr><td align='right'> %g </td><td></td><td>Hours as value 1 to 12</td></tr>
+  <tr><td align='right'> %G </td><td></td><td>Hours as value 0 to 23</td></tr>
+  <tr><td align='right'> %h </td><td></td><td>Hours as value 01 to 12</td></tr>
+  <tr><td align='right'> %H </td><td></td><td>Hours as value 00 to 23</td></tr>
+  <tr><td align='right'> %i </td><td></td><td>Minutes as value 00 to 59</td></tr>
+  <tr><td align='right'> %s </td><td></td><td>Seconds as value 00 to 59</td></tr>
+  <tr><td align='right'> ~ </td><td></td><td>A colon character flashing once per second<br/>(note no %)</td></tr>
+</table></dd>
+
+<dt><b>Toolbar today</b></dt>
+<dd>This option defines the message displayed in the center of the toolbar. 
+This text may be clicked to return the calendar display to todays date. 
+Today's date may be presented using the date control sequences 
+shown <a href='#dates'>below</a>.</dd>
+
+<dt><b>Note title message</b></dt>
+<dd>Defines the text to be shown above the left panel text-area when a
+saved note is being displayed. The date control sequences <a href='#dates'>
+below</a> may e used to present the date to which the note refers.
+</dd>
+
+<dt><a name='AutorunCheck'><b>Auto run check</b></a></dt>
+<dd>Specify here the number of succeeding days to be checked for notes when 
+startin eyeCalendar automatially at user login with the 'check' parameter set
+see <a href='#pat2a'>above</a>). If a value of 0 is given then calendar will
+start only if the current day has a note saved, values of 1, 2 etc will check
+succeeding days also..</dd> 
+</dl>
+
+<center><a href="#top">Back to top</a></center>
+
+<h3><a name='dates'></a>Date display</h3>
+<p>The table below shows the control sequences which may be used to present a 
+date. Where the names of days and months are requested and a language translation
+is properly configured then the translated strings will be displayed.</p>
+
+<table align='center'>
+  <tr><td align='right'>%d</td><td>&nbsp;&nbsp;</td><td>Day of month as 01 to 31</td></tr>
+  <tr><td align='right'>%D</td><td></td><td>Week day short name, e.g. Mon</td></tr>
+  <tr><td align='right'>%j</td><td></td><td>Day of month as 1 to 31</td></tr>
+  <tr><td align='right'>%l</td><td></td><td>Week day full name, e.g. Monday</td></tr>
+  <tr><td align='right'>%N</td><td></td><td>Day of week as code 1 (Sun) to 7 (Sat) </td></tr>
+  <tr><td align='right'>%w</td><td></td><td>Day of week as code 0 (Sun) to 6 (Sat)</td></tr>
+
+  <tr><td colspan='3'><hr/></td></tr>
+  <tr><td align='right'>%F</td><td></td><td>Full month name, e.g. July</td></tr>
+  <tr><td align='right'>%m</td><td></td><td>Month number as 01 to 12</td></tr>
+  <tr><td align='right'>%M</td><td></td><td>Short month name, e.g. Jul</td></tr>
+  <tr><td align='right'>%n</td><td></td><td>Month number as 1 to 12</td></tr>
+
+  <tr><td colspan='3'><hr/></td></tr>
+  <tr><td align='right'>%Y</td><td></td><td>Full year number, e.g 2006</td></tr>
+  <tr><td align='right'>%y</td><td></td><td>Short year number, e.g. 06</td></tr>
+</table>
+
+<br/>
+<center><a href="#top">Back to top</a></center>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+QUICK INSTALLATION MANUAL FOR eyeOS
+-----------------------------------
+
+1) Download the latest version of eyeOS from http://www.eyeOS.org.
+
+2) Uncompress the package to a local dir.
+
+3) Upload the uncompressed eyeOS directory with your desired name.
+
+4) Change read/write permissions to 777 of the following directories:
+
+ etc/
+ home/
+ usr/
+
+5) Run index.php and complete installation (only one step).
+
+Please, read the SECURITY MANUAL.
+
+Enjoy eyeOS!
